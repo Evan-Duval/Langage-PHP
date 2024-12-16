@@ -1,0 +1,20 @@
+Lancement d'une nouvelle partie...
+
+Le nombre recherché est 11. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 20. Il lui reste 6 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 10. Il lui reste 5 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 15. Il lui reste 4 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 14. Il lui reste 3 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 13. Il lui reste 2 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 12. Il lui reste 1 tentatives .
+
+Le nombre recherché est 11. Le joueur à testé le nombre 11. Il lui reste 0 tentatives .
+
+Le joueur à trouvé le nombre en 8 tentatives. 
+

@@ -12,7 +12,7 @@ try {
     echo "Erreur : " . $e->getMessage() . "\n";
 }
 
-$fichiertentatives = "tentatives.txt";
+$fichiertentatives = "fichierlog.txt";
 $fichier = fopen($fichiertentatives,"a");
 
 if ($fichier) {
