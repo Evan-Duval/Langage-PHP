@@ -36,9 +36,8 @@ if ($fichier) {
         echo "Donne moi un chiffre entre 0 et 100 : \n";
         $res = readline();
         $nombreDeTentative++;
-        $tentativesRestantes = 8 - $nombreDeTentative;
 
-        fwrite($fichier, "Le nombre recherché est " . $randomChiffre . ". Le joueur à testé le nombre " . $res . ". Il lui reste " . $tentativesRestantes . " tentatives .\n\n");
+        fwrite($fichier, "Le nombre recherché est " . $randomChiffre . ". Le joueur à testé le nombre " . $res . ". Il lui reste " . $tentatives - 1 . " tentatives .\n\n");
     
         if ($res > $randomChiffre) {
             echo "C'est plus petit.\n";
@@ -46,8 +45,8 @@ if ($fichier) {
             echo "C'est plus grand.\n";
         } elseif ($res == $randomChiffre) {
             echo "Bravo tu as gagné !\n";
-            fwrite($fichier, "Le joueur à trouvé le nombre en " . $tentativesRestantes . " tentatives. \n\n");
-            echo "Il te restait " . $tentativesRestantes . " tentatives\n";
+            fwrite($fichier, "Le joueur à trouvé le nombre en " . $nombreDeTentative . " tentatives. \n\n");
+            echo "Il te restait " . $tentatives - 1 . " tentatives\n";
     
             $stmt = $stmt = $pdo->prepare(
                 "INSERT INTO joueurdevinettes

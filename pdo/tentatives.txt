@@ -1,62 +1,44 @@
 Lancement d'une nouvelle partie...
 
-Le nombre recherché est 50. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
+Le nombre recherché est 35. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
 
-Le joueur à trouvé le nombre en 0 tentatives. 
+Le nombre recherché est 35. Le joueur à testé le nombre 20. Il lui reste 6 tentatives .
 
-Lancement d'une nouvelle partie...
+Le nombre recherché est 35. Le joueur à testé le nombre 35. Il lui reste 5 tentatives .
 
-Le nombre recherché est 25. Le joueur à testé le nombre 60. Il lui reste 7 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 99. Il lui reste 6 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 8. Il lui reste 5 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 7. Il lui reste 4 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 5. Il lui reste 3 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 6. Il lui reste 2 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 4. Il lui reste 1 tentatives .
-
-Le nombre recherché est 25. Le joueur à testé le nombre 2. Il lui reste 0 tentatives .
-
-Le joueur à perdu la partie. 
+Le joueur à trouvé le nombre en 3 tentatives. 
 
 Lancement d'une nouvelle partie...
 
-Le nombre recherché est 63. Le joueur à testé le nombre 80. Il lui reste 7 tentatives .
+Le nombre recherché est 98. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
 
-Le nombre recherché est 63. Le joueur à testé le nombre 50. Il lui reste 6 tentatives .
+Le nombre recherché est 98. Le joueur à testé le nombre 80. Il lui reste 6 tentatives .
 
-Le nombre recherché est 63. Le joueur à testé le nombre 60. Il lui reste 5 tentatives .
+Le nombre recherché est 98. Le joueur à testé le nombre 90. Il lui reste 5 tentatives .
 
-Le nombre recherché est 63. Le joueur à testé le nombre 70. Il lui reste 4 tentatives .
+Le nombre recherché est 98. Le joueur à testé le nombre 95. Il lui reste 4 tentatives .
 
-Le nombre recherché est 63. Le joueur à testé le nombre 65. Il lui reste 3 tentatives .
+Le nombre recherché est 98. Le joueur à testé le nombre 98. Il lui reste 3 tentatives .
 
-Le nombre recherché est 63. Le joueur à testé le nombre 63. Il lui reste 2 tentatives .
-
-Le joueur à trouvé le nombre en 2 tentatives. 
+Le joueur à trouvé le nombre en 5 tentatives. 
 
 Lancement d'une nouvelle partie...
 
-Le nombre recherché est 11. Le joueur à testé le nombre 80. Il lui reste 7 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 7 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 90. Il lui reste 6 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 6 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 98. Il lui reste 5 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 5 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 9. Il lui reste 4 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 4 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 5. Il lui reste 3 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 3 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 6. Il lui reste 2 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 2 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 3. Il lui reste 1 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 1 tentatives .
 
-Le nombre recherché est 11. Le joueur à testé le nombre 2. Il lui reste 0 tentatives .
+Le nombre recherché est 5. Le joueur à testé le nombre 1. Il lui reste 0 tentatives .
 
 Le joueur à perdu la partie. 
 
