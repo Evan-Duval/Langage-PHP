@@ -86,3 +86,18 @@ Le nombre recherché est 37. Le joueur à testé le nombre . Il lui reste 0 tent
 
 Le joueur à perdu la partie. 
 
+Tentative: 80 - C'est plus petit.. Il reste 6 tentatives.
+Tentative: 50 - C'est plus petit.. Il reste 5 tentatives.
+Le joueur a trouvé le nombre après 4 tentatives.
+Tentative: 30 - Bravo, tu as trouvé le nombre 30 ! 🎉. Il reste 4 tentatives.
+Nouvelle partie commencée !
+Tentative: 80 - C'est plus petit.. Il reste 7 tentatives.
+Tentative: 50 - C'est plus grand.. Il reste 6 tentatives.
+Tentative: 40 - C'est plus grand.. Il reste 5 tentatives.
+Tentative: 2 - C'est plus grand.. Il reste 4 tentatives.
+Tentative: 3 - C'est plus grand.. Il reste 3 tentatives.
+Tentative: 3 - C'est plus grand.. Il reste 2 tentatives.
+Tentative: 3 - C'est plus grand.. Il reste 1 tentatives.
+Tentative: 3 - C'est plus grand.. Il reste 0 tentatives.
+Le joueur a perdu. Le nombre était 51.
+Nouvelle partie commencée !

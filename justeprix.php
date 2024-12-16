@@ -1,3 +1,49 @@
+<?php
+session_start();
+
+// Chemin du fichier pour enregistrer les tentatives
+$fichiertentatives = "tentatives.txt";
+
+// Initialisation du jeu
+if (!isset($_SESSION['randomChiffre'])) {
+    $_SESSION['randomChiffre'] = random_int(0, 100);
+    $_SESSION['tentatives'] = 8;
+    $_SESSION['historique'] = [];
+    file_put_contents($fichiertentatives, "Nouvelle partie commencée !\n", FILE_APPEND);
+}
+
+// Traitement du formulaire
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['chiffre'])) {
+    $chiffre = intval($_POST['chiffre']); // Récupérer le chiffre saisi
+    $_SESSION['tentatives']--;
+
+    // Analyser la tentative
+    if ($chiffre > $_SESSION['randomChiffre']) {
+        $message = "C'est plus petit.";
+    } elseif ($chiffre < $_SESSION['randomChiffre']) {
+        $message = "C'est plus grand.";
+    } else {
+        $message = "Bravo, tu as trouvé le nombre {$_SESSION['randomChiffre']} ! 🎉";
+        file_put_contents($fichiertentatives, "Le joueur a trouvé le nombre après " . (8 - $_SESSION['tentatives']) . " tentatives.\n", FILE_APPEND);
+        session_destroy(); // Terminer la session après la victoire
+    }
+
+    // Ajouter l'essai dans l'historique
+    $_SESSION['historique'][] = "Tentative: $chiffre - $message";
+
+    // Écrire chaque tentative dans le fichier
+    $log = "Tentative: $chiffre - $message. Il reste {$_SESSION['tentatives']} tentatives.\n";
+    file_put_contents($fichiertentatives, $log, FILE_APPEND);
+}
+
+// Vérifier si les tentatives sont épuisées
+if (isset($_SESSION['tentatives']) && $_SESSION['tentatives'] <= 0) {
+    $message = "Tu as perdu ! Le nombre était {$_SESSION['randomChiffre']}.";
+    file_put_contents($fichiertentatives, "Le joueur a perdu. Le nombre était {$_SESSION['randomChiffre']}.\n", FILE_APPEND);
+    session_destroy();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,42 +53,6 @@
 </head>
 <body>
     <h1>Le Juste Prix</h1>
-
-    <?php
-    // Démarrer une session pour sauvegarder les données entre les requêtes
-    session_start();
-
-    // Initialisation du jeu
-    if (!isset($_SESSION['randomChiffre'])) {
-        $_SESSION['randomChiffre'] = random_int(0, 100);
-        $_SESSION['tentatives'] = 8;
-        $_SESSION['historique'] = [];
-    }
-
-    // Traitement du formulaire
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $chiffre = intval($_POST['chiffre']); // Récupérer le chiffre saisi
-        $_SESSION['tentatives']--;
-
-        if ($chiffre > $_SESSION['randomChiffre']) {
-            $message = "C'est plus petit.";
-        } elseif ($chiffre < $_SESSION['randomChiffre']) {
-            $message = "C'est plus grand.";
-        } else {
-            $message = "Bravo, tu as trouvé le nombre {$_SESSION['randomChiffre']} ! 🎉";
-            session_destroy(); // Terminer la session après la victoire
-        }
-
-        // Enregistrer l'essai dans l'historique
-        $_SESSION['historique'][] = "Tentative: $chiffre - $message";
-    }
-
-    // Vérifier si les tentatives sont épuisées
-    if (isset($_SESSION['tentatives']) && $_SESSION['tentatives'] <= 0) {
-        $message = "Tu as perdu ! Le nombre était {$_SESSION['randomChiffre']}.";
-        session_destroy(); // Terminer la session après la défaite
-    }
-    ?>
 
     <?php if (isset($message)) : ?>
         <p><strong><?= htmlspecialchars($message) ?></strong></p>
