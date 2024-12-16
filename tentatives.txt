@@ -26,5 +26,87 @@ Le nombre recherché est 85. Le joueur à testé le nombre 90. Il lui reste 4 te
 
 Le nombre recherché est 85. Le joueur à testé le nombre 85. Il lui reste 3 tentatives .
 
-Le jouer à trouvé le nombre en 5 tentatives. 
+Le joueur à trouvé le nombre en 5 tentatives. 
+
+Le nombre recherché est 30. Le joueur à testé le nombre 80. Il lui reste 8 tentatives .
+
+Le nombre recherché est 30. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
+
+Le nombre recherché est 30. Le joueur à testé le nombre 20. Il lui reste 6 tentatives .
+
+Le nombre recherché est 30. Le joueur à testé le nombre 30. Il lui reste 5 tentatives .
+
+Le joueur à trouvé le nombre en 3 tentatives. 
+
+Lancement d'une nouvelle partieLe nombre recherché est 29. Le joueur à testé le nombre 50. Il lui reste 8 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 40. Il lui reste 7 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 20. Il lui reste 6 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 25. Il lui reste 5 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 30. Il lui reste 4 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 28. Il lui reste 3 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 29. Il lui reste 2 tentatives .
+
+Le joueur à trouvé le nombre en 6 tentatives. 
+
+Lancement d'une nouvelle partie
+
+Le nombre recherché est 29. Le joueur à testé le nombre 80. Il lui reste 8 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 50. Il lui reste 7 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 10. Il lui reste 6 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 25. Il lui reste 5 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 35. Il lui reste 4 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 30. Il lui reste 3 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 28. Il lui reste 2 tentatives .
+
+Le nombre recherché est 29. Le joueur à testé le nombre 29. Il lui reste 1 tentatives .
+
+Le joueur à trouvé le nombre en 7 tentatives. 
+
+Lancement d'une nouvelle partie...
+
+Le nombre recherché est 93. Le joueur à testé le nombre 50. Il lui reste 8 tentatives .
+
+Le nombre recherché est 93. Le joueur à testé le nombre 80. Il lui reste 7 tentatives .
+
+Le nombre recherché est 93. Le joueur à testé le nombre 90. Il lui reste 6 tentatives .
+
+Le nombre recherché est 93. Le joueur à testé le nombre 95. Il lui reste 5 tentatives .
+
+Le nombre recherché est 93. Le joueur à testé le nombre 94. Il lui reste 4 tentatives .
+
+Le nombre recherché est 93. Le joueur à testé le nombre 93. Il lui reste 3 tentatives .
+
+Le joueur à trouvé le nombre en 5 tentatives. 
+
+Lancement d'une nouvelle partie...
+
+Le nombre recherché est 18. Le joueur à testé le nombre 80. Il lui reste 8 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 74. Il lui reste 7 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 76. Il lui reste 6 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 20. Il lui reste 5 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 15. Il lui reste 4 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 87. Il lui reste 3 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 95. Il lui reste 2 tentatives .
+
+Le nombre recherché est 18. Le joueur à testé le nombre 53. Il lui reste 1 tentatives .
+
+Le joueur à perdu la partie. 
 

@@ -4,6 +4,8 @@ $fichiertentatives = "tentatives.txt";
 $fichier = fopen($fichiertentatives,"a");
 
 if ($fichier) {
+    fwrite($fichier, "Lancement d'une nouvelle partie...\n\n");
+
     $randomChiffre = random_int(0, 100);
     $res;
     $tentatives = 8;
@@ -24,10 +26,11 @@ if ($fichier) {
         } elseif ($res == $randomChiffre) {
             echo "Bravo tu as gagné !\n";
             echo "Il te restait " . $tentatives . " tentatives\n";
-            fwrite($fichier, "Le jouer à trouvé le nombre en " . 8 - $tentatives . " tentatives. \n\n");
+            fwrite($fichier, "Le joueur à trouvé le nombre en " . 8 - $tentatives . " tentatives. \n\n");
             return;
         }
         if ($tentatives == 0) {
+            fwrite($fichier, "Le joueur à perdu la partie. \n\n");
             echo "Tu as perdu, le chiffre était ". $randomChiffre. "\n";
         } else {
             echo "Il te reste " . $tentatives . " tentatives\n";
