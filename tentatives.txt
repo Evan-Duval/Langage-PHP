@@ -1,0 +1,30 @@
+Le nombre recherché est 36. Le joueur à tester le nombre 50. Il lui reste 8 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 40. Il lui reste 7 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 20. Il lui reste 6 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 30. Il lui reste 5 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 35. Il lui reste 4 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 38. Il lui reste 3 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 37. Il lui reste 2 tentatives .
+
+Le nombre recherché est 36. Le joueur à tester le nombre 36. Il lui reste 1 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 50. Il lui reste 8 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 60. Il lui reste 7 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 70. Il lui reste 6 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 80. Il lui reste 5 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 90. Il lui reste 4 tentatives .
+
+Le nombre recherché est 85. Le joueur à testé le nombre 85. Il lui reste 3 tentatives .
+
+Le jouer à trouvé le nombre en 5 tentatives. 
+
