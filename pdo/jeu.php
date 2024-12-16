@@ -35,36 +35,45 @@ if ($fichier) {
     for($tentatives = 8; $tentatives > 0; $tentatives--) {
         echo "Donne moi un chiffre entre 0 et 100 : \n";
         $res = readline();
-        $nombreDeTentative++;
 
-        fwrite($fichier, "Le nombre recherché est " . $randomChiffre . ". Le joueur à testé le nombre " . $res . ". Il lui reste " . $tentatives - 1 . " tentatives .\n\n");
+        if (0 <= $res && $res <= 100) {
+
+            $nombreDeTentative++;
     
-        if ($res > $randomChiffre) {
-            echo "C'est plus petit.\n";
-        } elseif ($res < $randomChiffre) {
-            echo "C'est plus grand.\n";
-        } elseif ($res == $randomChiffre) {
-            echo "Bravo tu as gagné !\n";
-            fwrite($fichier, "Le joueur à trouvé le nombre en " . $nombreDeTentative . " tentatives. \n\n");
-            echo "Il te restait " . $tentatives - 1 . " tentatives\n";
-    
-            $stmt = $stmt = $pdo->prepare(
-                "INSERT INTO joueurdevinettes
-                        (Nom, Prenom, Classe, NombreDeTentatives, NombreATrouver, Victoire) 
-                        VALUES (:Nom, :Prenom, :Classe, :NombreDeTentatives, :NombreATrouver, :Victoire)
-                        ");
-            $stmt->execute([
-                ':Nom' => $nomJoueur,
-                ':Prenom' => $prenomJoueur,
-                ':Classe' => $classeJoueur,
-                ':NombreDeTentatives' => $nombreDeTentative,
-                ':NombreATrouver' => $randomChiffre,
-                ':Victoire' => true,
-            ]);
-    
-            return;
+            fwrite($fichier, "Le nombre recherché est " . $randomChiffre . ". Le joueur à testé le nombre " . $res . ". Il lui reste " . $tentatives - 1 . " tentatives .\n\n");
+        
+            if ($res > $randomChiffre) {
+                echo "C'est plus petit.\n";
+            } elseif ($res < $randomChiffre) {
+                echo "C'est plus grand.\n";
+            } elseif ($res == $randomChiffre) {
+                echo "Bravo tu as gagné !\n";
+                fwrite($fichier, "Le joueur à trouvé le nombre en " . $nombreDeTentative . " tentatives. \n\n");
+                echo "Il te restait " . $tentatives - 1 . " tentatives\n";
+        
+                $stmt = $stmt = $pdo->prepare(
+                    "INSERT INTO joueurdevinettes
+                            (Nom, Prenom, Classe, NombreDeTentatives, NombreATrouver, Victoire) 
+                            VALUES (:Nom, :Prenom, :Classe, :NombreDeTentatives, :NombreATrouver, :Victoire)
+                            ");
+                $stmt->execute([
+                    ':Nom' => $nomJoueur,
+                    ':Prenom' => $prenomJoueur,
+                    ':Classe' => $classeJoueur,
+                    ':NombreDeTentatives' => $nombreDeTentative,
+                    ':NombreATrouver' => $randomChiffre,
+                    ':Victoire' => true,
+                ]);
+        
+                return;
+            }
+            echo "Il te reste " . $tentatives - 1 . " tentatives\n";
+
+        } else {
+            $tentatives++;
+            echo "Veuillez entrer un chiffre entre 0 et 100.\n";
         }
-        echo "Il te reste " . $tentatives - 1 . " tentatives\n";
+
     }
     fwrite($fichier, "Le joueur à perdu la partie. \n\n");
     echo "Tu as perdu, le chiffre était ". $randomChiffre. "\n";
