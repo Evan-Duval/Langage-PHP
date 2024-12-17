@@ -30,19 +30,19 @@ for ($i = 1; $i <= $nombreDeJoueur; $i++) {
     switch ($numeroClasse) :
         case 1:
             $classeDuJoueur = "Guerrier";
-            $guerrier = new Guerrier("{$nomDuJoueur}", "{$classeDuJoueur}");
+            ${"joueur{$i}"} = new Guerrier("{$nomDuJoueur}", "{$classeDuJoueur}");
             break;
         case 2:
             $classeDuJoueur = "Archer";
-            $archer = new Archer("{$nomDuJoueur}", "{$classeDuJoueur}");
+            ${"joueur{$i}"} = new Archer("{$nomDuJoueur}", "{$classeDuJoueur}");
             break;
         case 3:
             $classeDuJoueur = "Mage";
-            $mage = new Mage("{$nomDuJoueur}", "{$classeDuJoueur}");
+            ${"joueur{$i}"} = new Mage("{$nomDuJoueur}", "{$classeDuJoueur}");
             break;
         case 4:
             $classeDuJoueur = "Barde";
-            $barde = new Barde("{$nomDuJoueur}", "{$classeDuJoueur}");
+            ${"joueur{$i}"} = new Barde("{$nomDuJoueur}", "{$classeDuJoueur}");
             break;
         default:
             echo "Veuillez entrer un nombre correspondant à une classe.\n";
@@ -55,7 +55,7 @@ for ($i = 1; $i <= $nombreDeJoueur; $i++) {
 if ($nombreDeJoueur == 2) {
     //
 } else {
-    combatEquipe($guerrier, $archer, $mage, $barde);
+    combatEquipe($joueur1, $joueur2, $joueur3, $joueur4);
 }
 
 function combat($joueur1, $joueur2) {
@@ -83,5 +83,38 @@ function combat($joueur1, $joueur2) {
 }
 
 function combatEquipe($joueur1, $joueur2, $joueur3, $joueur4) {
-    echo "{$joueur1->afficherInfos()}\n {$joueur2->afficherInfos()}\n {$joueur3->afficherInfos()}\n {$joueur4->afficherInfos()}";
+    $equipe1 = [];
+    $equipe2 = [];
+
+    // Création de deux équipes de 2 de façon aléatoire
+    for ($i = 1; $i <= 4; $i++) {
+        $random = rand(1, 2);
+        if (count($equipe1) < 2 && count($equipe2) < 2) {
+            if ($random == 1) {
+                array_push($equipe1, ${"joueur{$i}"});
+            } else {
+                array_push($equipe2, ${"joueur{$i}"});
+            }
+        } elseif (count($equipe1) >= 2) {
+            array_push($equipe2, ${"joueur{$i}"});
+        } elseif (count($equipe2) >= 2) {
+            array_push($equipe1, ${"joueur{$i}"});
+        }
+    }
+
+    echo "\nL'équipe 1 est composée de {$equipe1[0]->getName()} et de {$equipe1[1]->getName()} \n";
+    echo "L'équipe 2 est composée de {$equipe2[0]->getName()} et de {$equipe2[1]->getName()} \n\n";
+
+    // On va prendre l'équipe qui à le plus d'initiative en cumulée, elle commencera.
+    $totalIniEquipe1 = $equipe1[0]->getInitiative() + $equipe1[1]->getInitiative();
+    $totalIniEquipe2 = $equipe2[0]->getInitiative() + $equipe2[1]->getInitiative();
+    $premierAJouer = $totalIniEquipe1 > $totalIniEquipe2 ? $equipe1 : $equipe2;
+    $message = ($premierAJouer == $equipe1 ) ? "L'équipe 1 va commencée car elle a le plus d'initiative en cumulée ({$totalIniEquipe1} contre {$totalIniEquipe2})" : "L'équipe 2 va commencée car elle a le plus d'initiative en cumulée ({$totalIniEquipe2} contre {$totalIniEquipe1})";
+
+    echo $message;
+
+    echo "Début du combat";
+    echo "---------------";
+
+    
 }
