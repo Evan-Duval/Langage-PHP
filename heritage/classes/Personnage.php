@@ -2,22 +2,22 @@
 abstract class Personnage {
     // Propriétés
     protected string $name;
-    protected int $vie;
+    protected string $classe;
     protected int $initiative;
+    protected int $vie;
 
     // Constructeur 
-    public function __construct(string $name, int $vie, int $initiative) {
+    public function __construct(string $name, string $classe) {
         $this->name = $name;
-        $this->vie = $vie;
-        $this->initiative = $initiative;
+        $this->classe = $classe;
+        $this->initiative = rand(1, 100);
     }
 
     // Méthodes
-
     abstract public function attaquer(string $cible);
 
     public function afficherInfos(): string {
-        return "{$this->name} a {$this->vie} points de vie et {$this->initiative} d'initiative\n";
+        return "\n{$this->name} ({$this->classe}) a {$this->vie} points de vie, {$this->initiative} d'initiative\n";
     }
 
     public function getName(): string {

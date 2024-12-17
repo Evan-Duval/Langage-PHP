@@ -5,19 +5,20 @@ require_once "Personnage.php";
 class Guerrier extends Personnage {
     // Propriétés
     private int $force;
-    private int $vie;
+    protected int $vie;
 
     // Constructeur
 
-    public function __construct(string $name, int $vie, int $initiative, int $force) {
-        parent::__construct( $name, $vie, $initiative);
-        $this->force = $force;
+    public function __construct(string $name, string $classe) {
+        parent::__construct( $name, $classe);
+        $this->force = rand(1, 20);
+        $this->vie = 120;
     }
 
     // Méthodes
 
     public function afficherInfos(): string {
-        return parent::afficherInfos() . "et {$this->force} de force\n";
+        return parent::afficherInfos() . "et {$this->force} de force.\n";
     }
 
     public function attaquer($cible): string {
