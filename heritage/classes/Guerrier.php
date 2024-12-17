@@ -5,6 +5,7 @@ require_once "Personnage.php";
 class Guerrier extends Personnage {
     // Propriétés
     private int $force;
+    private int $vie;
 
     // Constructeur
 

@@ -5,6 +5,7 @@ require_once "Personnage.php";
 class Archer extends Personnage {
     // Propriétés
     private int $precision;
+    private int $vie;
 
     // Construction
     public function __construct(string $name, int $vie, int $initiative, int $precision) {
